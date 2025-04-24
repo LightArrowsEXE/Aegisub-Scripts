@@ -5,8 +5,6 @@
     Author: LightArrowsEXE <https://github.com/LightArrowsEXE>
 ]]
 
-local frame = {}
-
 --[[
     Calculate frame duration in milliseconds based on timebase
 
@@ -14,8 +12,10 @@ local frame = {}
     @param denominator number Timebase denominator (e.g. 1001)
     @return number Frame duration in milliseconds
 ]]
-function frame.duration(numerator, denominator)
+local frame = {
+  duration = function (numerator, denominator)
     return (1000 * denominator) / numerator
-end
+  end
+}
 
 return frame

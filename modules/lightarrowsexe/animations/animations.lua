@@ -32,8 +32,6 @@ local animations = {
 
         -- pixel art
         pixelart = {
-            heart = pixelart.heart,
-            rings = pixelart.rings,
             sparkburst = pixelart.sparkburst,
             plasma = pixelart.plasma
         }

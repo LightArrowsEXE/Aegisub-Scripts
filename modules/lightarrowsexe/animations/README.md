@@ -48,3 +48,12 @@ Various animal-related animations.
 | Parent | Child | Length |
 | ------ | ----- | ------ |
 | cat    | burst | 4      |
+
+### Pixelart
+
+Various pixel art animations.
+
+| Parent     | Child | Length |
+| ---------- | ----- | ------ |
+| sparkburst | -     | 8      |
+| plasma     | -     | 9      |

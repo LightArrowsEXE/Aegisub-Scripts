@@ -1,0 +1,32 @@
+{
+  "dependencyControlFeedFormatVersion": "0.2.0",
+  "name": "LightArrowsEXE's Aegisub Scripts",
+  "description": "A collection of macros and modules by LightArrowsEXE for Aegisub Automation.",
+  "baseUrl": "https://github.com/LightArrowsEXE/Aegisub-Scripts",
+  "fileBaseUrl": "https://raw.githubusercontent.com/LightArrowsEXE/Aegisub-Scripts/main",
+  "url": "@{baseUrl}",
+  "maintainer": "LightArrowsEXE",
+  "knownFeeds": {
+    "Functional": "https://raw.githubusercontent.com/TypesettingTools/Functional/master/DependencyControl.json",
+    "ASSFoundation": "https://raw.githubusercontent.com/TypesettingTools/ASSFoundation/master/DependencyControl.json"
+  },
+  "macros": {
+    "lightarrowsexe.tagstripper": {
+      "fileBaseUrl": "@{fileBaseUrl}/macros",
+      "url": "@{baseUrl}#lightarrowsexe.tagstripper",
+      "author": "lightarrowsexe",
+      "name": "TagStripper",
+      "description": "Removes selected override tags from selected events.",
+      "channels": {
+        "stable": {
+          "version": "1.0.0",
+          "released": "2025-05-13",
+          "default": true,
+          "files": [
+            { "name": "lightarrowsexe.tagstripper.moon", "url": "@{fileBaseUrl}/lightarrowsexe.tagstripper.moon" }
+          ]
+        }
+      }
+    }
+  }
+}

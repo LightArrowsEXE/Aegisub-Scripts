@@ -40,11 +40,14 @@ remove_tags = (text, tags_to_remove) ->
             if type(tag) != "string" or #tag == 0
                 continue
 
-            if string_arg_tags[tag]
-                pattern = tag .. "[^\\}\\\\]*"
+            if tag == "\\t"
+                pattern = "\\t%b()"
+                new_override = new_override\gsub(pattern, '')
+            else if string_arg_tags[tag]
+                pattern = tag .. "[^%}%\\]*"
                 new_override = new_override\gsub(pattern, '')
             else
-                pattern = tag .. "%f[^a-zA-Z][^\\}\\\\]*"
+                pattern = tag .. "%f[^a-zA-Z][^%}%\\]*"
                 new_override = new_override\gsub(pattern, '')
 
         if new_override\match "^%{%s*%}$"

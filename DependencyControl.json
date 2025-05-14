@@ -27,6 +27,23 @@
           ]
         }
       }
+    },
+    "lightarrowsexe.weebswap": {
+      "fileBaseUrl": "@{fileBaseUrl}/macros",
+      "url": "@{baseUrl}#lightarrowsexe.weebswap",
+      "author": "lightarrowsexe",
+      "name": "WeebSwap",
+      "description": "Swaps (partial) events in pairs based on a key.",
+      "channels": {
+        "stable": {
+          "version": "1.0.0",
+          "released": "2025-05-14",
+          "default": true,
+          "files": [
+            { "name": "lightarrowsexe.weebswap.moon", "url": "@{fileBaseUrl}/macros/lightarrowsexe.weebswap.moon" }
+          ]
+        }
+      }
     }
   }
 }
